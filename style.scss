@@ -1,0 +1,212 @@
+$white: #f5f6fa;
+$bg: #dcdde1;
+$device: #192a56;
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+*{
+  box-sizing: border-box;
+  font-family: 'Righteous', cursive;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-45deg,#ED4C67,#5758BB);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#device{
+  position: relative;
+  background-color: $device;
+  width: 300px;
+  height: 600px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  padding: 10px;
+  box-shadow: -20px 10px 15px rgba(0,0,0,0.4);
+  overflow: hidden;
+  .notch{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-52%);
+    background-color: $device;
+    width: 150px;
+    height: 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 10;
+  }
+  .top_nav{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    .clock{
+      display: inline-block;
+      color: $white;
+      font-size: 15px;
+      margin: 5px 0 0 15px;
+    }
+    .others{
+      position: absolute;
+      top: 5px;
+      right: 30px;
+      display: inline-block;
+      i{
+        font-size: 13px;
+        color: $white;
+      }
+    }
+  }
+.full-content{
+  background: linear-gradient(5deg,#ED4C67,#5758BB);
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  padding: 8px;
+}
+.header-content{
+  position: relative;
+  top: 30px;
+  background-color: rgba($white , $alpha: 0.85);
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  .thumbnails{
+    background-color: #f5f6fa;
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    margin: auto auto;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    img{
+      width: 100%;
+      height: auto;
+      border-radius: 50px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    }
+  }
+  p{
+    margin: 5px;
+    text-align: center;
+  }
+  .name {
+    font-size: 18px;
+    font-family: 'Fredoka One', cursive;
+    i {
+      color: #0652DD;
+      margin-left: 5px;
+    }
+  }
+  .city{
+    span{
+      color: #aaa;
+      font-size: 12px;
+    }
+  }
+  .bio{
+    color: #2ed573;
+    font-size: 14px;
+  }
+  .work{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #aaa;
+    padding-bottom: 10px;
+    .box{
+      text-align: left;
+      width: 100%;
+      span{
+        font-size: 12px;
+        color: #444444;
+      }
+      .percent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        span{
+          color: #888888;
+        }
+      }
+      .a{border: 2px solid #ED4C67}
+      .b{border: 2px solid #0652DD}
+      .c{border: 2px solid #5758BB}
+    }
+  }
+
+  #about{
+    padding: 5px;
+    .title,p{
+      margin: 5px;
+      text-align: left;
+    }
+    p{
+      font-size: 12px;
+      font-weight: 500;
+      color: #888888;
+    }
+
+  }
+  #working{
+    padding: 5px;
+    .title{
+      margin: 0;
+    }
+    ul{
+      margin: 5px 0 0;
+      padding: 0 20px;
+    }
+    li{
+      padding: 0;
+      margin: 0;
+      font-size: 12px;
+      line-height: 2;
+      font-weight: 500;
+      color: #888888;
+      span{
+        float: right;
+      }
+    }
+  }
+
+  #contact{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    button{
+      background-color: #ED4C67;
+      margin: 10px 0 0 0;
+      padding: 10px 20px;
+      color: $white;
+      border: none;
+      outline: none;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 4px #ED4C67;
+      transition: all 0.3s;
+      cursor: pointer;
+      &:hover{
+        box-shadow: 0 0 12px #ED4C67;
+      }
+    }
+  }
+}
+
+}
